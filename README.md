@@ -1,1 +1,1 @@
-# Article_JSC_2021
+# Accurate computations with collocation and Wronskian matrices of Jacobi polynomials
