@@ -7,5 +7,5 @@ In this repository, the bidiagonal decompositions (BDA) of the collocation and  
 The implementation uses Matlab 2020b and Wolfram Mathematica. 
 
 
-![paper_banner](paper_banner.png)
+
 
