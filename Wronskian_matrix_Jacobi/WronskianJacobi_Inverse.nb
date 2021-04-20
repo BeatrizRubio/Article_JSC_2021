@@ -1,0 +1,179 @@
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[         0,          0]
+NotebookDataLength[      7321,        178]
+NotebookOptionsPosition[      6715,        156]
+NotebookOutlinePosition[      7113,        172]
+CellTagsIndexPosition[      7070,        169]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+  "Import", "[", 
+   "\"\</Users/beatrizrubioserrano/Desktop/Github/Article5_\
+ScientificComputing_2021/inverseWronskianJacobiB.csv'.csv\>\"", "]"}], "  ", "//",
+   "TableForm"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+  "Import", "[", 
+   "\"\</Users/beatrizrubioserrano/Desktop/Github/Article5_\
+ScientificComputing_2021/inverseWronskianJacobiM.csv'.csv\>\"", "]"}], " ", "//",
+   "TableForm"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"InverseB", "=", "%1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"InverseM", "=", "%2"}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"n", "=", "25"}], "\[IndentingNewLine]", 
+ RowBox[{"Clear", "[", "x", "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"alpha", "=", "1"}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"beta", "=", "2"}], ";"}], "\[IndentingNewLine]", 
+  "\n"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"A", "=", 
+    RowBox[{"N", "[", 
+     RowBox[{
+      RowBox[{"Table", "[", 
+       RowBox[{
+        RowBox[{"D", "[", 
+         RowBox[{
+          RowBox[{
+           RowBox[{"(", 
+            RowBox[{
+             RowBox[{"Gamma", "[", 
+              RowBox[{"alpha", "+", "j"}], "]"}], "/", 
+             RowBox[{"(", 
+              RowBox[{
+               RowBox[{"Factorial", "[", 
+                RowBox[{"j", "-", "1"}], "]"}], "*", 
+               RowBox[{"Gamma", "[", 
+                RowBox[{"alpha", "+", "beta", "+", "j"}], "]"}]}], ")"}]}], 
+            ")"}], "*", 
+           RowBox[{"Sum", "[", 
+            RowBox[{
+             RowBox[{
+              RowBox[{"Binomial", "[", 
+               RowBox[{
+                RowBox[{"j", "-", "1"}], ",", 
+                RowBox[{"i", "-", "1"}]}], "]"}], "*", 
+              RowBox[{"(", 
+               RowBox[{
+                RowBox[{"Gamma", "[", 
+                 RowBox[{"alpha", "+", "beta", "+", "j", "+", "i", "-", "1"}],
+                  "]"}], "/", 
+                RowBox[{"Gamma", "[", 
+                 RowBox[{"alpha", "+", "i"}], "]"}]}], ")"}], "*", 
+              RowBox[{
+               RowBox[{"(", 
+                RowBox[{
+                 RowBox[{"(", 
+                  RowBox[{"x", "-", "1"}], ")"}], "/", "2"}], ")"}], "^", 
+               RowBox[{"(", 
+                RowBox[{"i", "-", "1"}], ")"}]}]}], ",", 
+             RowBox[{"{", 
+              RowBox[{"i", ",", "1", ",", "j"}], "}"}]}], "]"}]}], ",", 
+          RowBox[{"{", 
+           RowBox[{"x", ",", 
+            RowBox[{"i", "-", "1"}]}], "}"}]}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"i", ",", "1", ",", "n"}], "}"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"j", ",", "1", ",", "n"}], "}"}]}], "]"}], ",", "100"}], 
+     "]"}]}], ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"x", "=", "50"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.8182391028948298`*^9, 3.818239103555624*^9}, 
+   3.8182391385150433`*^9, {3.818239176454503*^9, 3.818239212018674*^9}, {
+   3.818240482965602*^9, 3.8182404879659643`*^9}, {3.818240668257928*^9, 
+   3.818240672326969*^9}, {3.8182409572151613`*^9, 3.81824096273314*^9}, {
+   3.81824141782834*^9, 3.81824142834739*^9}, {3.818756657419894*^9, 
+   3.8187566746150627`*^9}, {3.818759358111648*^9, 3.818759369991191*^9}, {
+   3.818759409616644*^9, 3.8187594256956797`*^9}, {3.8187594634007483`*^9, 
+   3.818759473147707*^9}, {3.8201993402441893`*^9, 3.8201993614254723`*^9}, {
+   3.820199421006228*^9, 3.820199453732977*^9}, {3.82019970241964*^9, 
+   3.8201997136263533`*^9}, {3.8201998338964977`*^9, 
+   3.8201998376740923`*^9}, {3.820199979256966*^9, 3.820199986251466*^9}, {
+   3.820200522707879*^9, 3.820200523823119*^9}, {3.820200666441634*^9, 
+   3.82020067016743*^9}, {3.820811404141612*^9, 3.820811415503427*^9}, {
+   3.820811625074547*^9, 3.8208116338090887`*^9}, {3.820811723885316*^9, 
+   3.82081172669014*^9}, {3.8208121741391973`*^9, 3.82081217907795*^9}, {
+   3.820812418118428*^9, 3.820812422985873*^9}, {3.820812978933735*^9, 
+   3.8208129837659283`*^9}, {3.823139730401816*^9, 3.823139776257125*^9}, {
+   3.823139919707726*^9, 3.823139924932722*^9}, {3.823139996524434*^9, 
+   3.823140001738923*^9}, {3.8231400766637783`*^9, 3.8231400821726522`*^9}, {
+   3.823169580252967*^9, 3.8231696596462812`*^9}, {3.8231697558682537`*^9, 
+   3.823169767003746*^9}, {3.823169802033008*^9, 3.82316989241634*^9}, {
+   3.823169932919376*^9, 3.8231699341327963`*^9}, {3.823169970730928*^9, 
+   3.823169970857305*^9}, {3.823170014778698*^9, 3.823170015317686*^9}, {
+   3.8231700656855164`*^9, 3.823170081891316*^9}, {3.823176619486125*^9, 
+   3.823176622482497*^9}, {3.823176690713476*^9, 3.823176690884078*^9}, {
+   3.823176734019299*^9, 3.823176735074748*^9}, {3.823176804138465*^9, 
+   3.823176804947509*^9}, {3.82317691145623*^9, 3.8231769639731903`*^9}, {
+   3.823177047729361*^9, 3.8231770531049433`*^9}, {3.826936149431424*^9, 
+   3.8269362607204323`*^9}, {3.82693634846017*^9, 3.826936386663596*^9}, {
+   3.826936503964898*^9, 3.826936504623395*^9}, {3.826936775063973*^9, 
+   3.826936804240279*^9}, {3.826936852273655*^9, 3.826936853790471*^9}, {
+   3.826936928596043*^9, 
+   3.826936933748876*^9}},ExpressionUUID->"615c6304-5eb2-498b-8399-\
+c3ba365629d2"],
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"InverseA", "=", 
+   RowBox[{"Inverse", "[", "A", "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ErrorM", "=", 
+   RowBox[{"Abs", "[", 
+    RowBox[{"InverseM", "-", "InverseA"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ErrorB", "=", 
+   RowBox[{"Abs", "[", 
+    RowBox[{"InverseB", "-", "InverseA"}], "]"}]}], ";"}], "\n", 
+ RowBox[{"ErrorRM", "=", 
+  RowBox[{
+   RowBox[{"Norm", "[", "ErrorM", "]"}], "/", 
+   RowBox[{"Norm", "[", "InverseA", "]"}]}]}], "\[IndentingNewLine]", 
+ RowBox[{"ErrorRB", "=", 
+  RowBox[{
+   RowBox[{"Norm", "[", "ErrorB", "]"}], "/", 
+   RowBox[{"Norm", "[", "InverseA", "]"}]}]}]}], "Input",
+ CellChangeTimes->{{3.8208130092550507`*^9, 3.820813010067046*^9}, {
+  3.826936217407774*^9, 3.826936220750124*^9}, {3.8269363942575197`*^9, 
+  3.826936395923201*^9}, {3.8269367798659697`*^9, 3.826936784377119*^9}, {
+  3.826936855657577*^9, 
+  3.826936857093402*^9}},ExpressionUUID->"3c89edec-9833-4a14-90f5-\
+7d2400febed8"]
+},
+WindowSize->{Full, Full},
+WindowMargins->{{556, Automatic}, {Automatic, 50}},
+FrontEndVersion->"12.1 para Mac OS X x86 (64-bit) (March 13, 2020)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"03edc886-92d2-498a-b0b7-f737e47fcb12"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[400, 13, 5290, 113, 385, "Input",ExpressionUUID->"615c6304-5eb2-498b-8399-c3ba365629d2"],
+Cell[5693, 128, 1018, 26, 188, "Input",ExpressionUUID->"3c89edec-9833-4a14-90f5-7d2400febed8"]
+}
+]
+*)
+
